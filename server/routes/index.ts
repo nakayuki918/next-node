@@ -8,10 +8,4 @@ router.get('/', (req: Request, res: Response, next: NextFunction) => {
 
 router.get('/:id', homeController.sendReqParams);
 
-router.post('/', (req: Request, res: Response) => {
-  console.log(req.body)
-  console.log(req.query)
-  res.send('200')
-})
-
 export default router
